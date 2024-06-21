@@ -19,6 +19,28 @@ Install the plugin via npm:
 npm install maplibre-context-menu
 ```
 
+<!-- Quick Usage -->
+
+## Quick Usage
+
+To use the context menu, you need to create an instance of the `MapLibreContextMenu` class and pass it the map instance. The context menu will automatically be displayed when you right-click on the map.
+
+```js
+import maplibregl from 'maplibre-gl';
+import MapLibreContextMenu from 'maplibre-context-menu';
+
+import 'maplibre-gl/dist/maplibre-gl.css'
+
+const map = new maplibregl.Map({
+  container: 'map',
+  style: 'https://demotiles.maplibre.org/style.json',
+  center: [0, 0],
+  zoom: 2,
+});
+
+new MapLibreContextMenu(map);
+```
+
 <!-- Custom Menu Items -->
 ## Custom Menu Items
 
@@ -27,8 +49,6 @@ You can add custom menu items to the context menu by providing an array of custo
 - `action`: A unique identifier for the custom action.
 - `label`: The label to display in the context menu.
 - `handler`: A function that will be called when the custom item is clicked. The function will receive the coordinates of the clicked location as an argument.
-
-## Usage
 
 To use the context menu, you need to create an instance of the `MapLibreContextMenu` class and pass it the map instance. The context menu will automatically be displayed when you right-click on the map.
 
