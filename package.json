@@ -1,0 +1,25 @@
+{
+  "name": "maplibre-context-menu",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A context menu plugin for MapLibre",
+  "type": "module",
+  "author": "Farhan Mehdi",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "example": "vite --config example/vite.config.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "path": "^0.12.7",
+    "url": "^0.11.3"
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.4.1",
+    "path": "^0.12.7"
+  }
+}
